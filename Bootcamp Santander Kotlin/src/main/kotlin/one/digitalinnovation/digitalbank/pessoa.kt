@@ -5,6 +5,10 @@ class pessoa {
     //variaveis da classe pessoa
     var nome: String = "Wendell"
     var cpf: String = "123.123.123-13"
+
+    //restringe alterações dos valores das propriedades
+    //fora do escopo da classe
+    private set
 }
 
 fun main() {
