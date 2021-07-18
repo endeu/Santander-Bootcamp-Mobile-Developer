@@ -9,6 +9,11 @@ class pessoa {
     //restringe alterações dos valores das propriedades
     //fora do escopo da classe
     private set
+
+    //construtor secondary
+    constructor()
+
+    fun pessoaInfo () = "$nome e $cpf"
 }
 
 fun main() {
@@ -17,6 +22,5 @@ fun main() {
     val Wendell = pessoa()
 
     //saídas
-    println(Wendell.nome)
-    println(Wendell.cpf)
+    println(Wendell.pessoaInfo())
 }
