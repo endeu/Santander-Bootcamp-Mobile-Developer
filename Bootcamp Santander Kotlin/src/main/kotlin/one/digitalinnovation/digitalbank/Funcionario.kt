@@ -1,3 +1,4 @@
+//pacotes e importações
 package one.digitalinnovation.digitalbank
 
 //herda propriedades de pessoa
@@ -11,14 +12,14 @@ abstract class Funcionario(
     val salario: Double
 
     //referencia à classe pessoa, herdando propriedades
-): pessoa(nome, cpf) {
+): Pessoa(nome, cpf) {
 
     protected abstract fun CalculoAux(): Double
 
     override fun toString(): String="""
         Nome: $nome
-        Nome: $cpf
-        Nome: $salario
+        cpf: $cpf
+        salario: $salario
         Aux: ${CalculoAux()}
     """.trimIndent()
 

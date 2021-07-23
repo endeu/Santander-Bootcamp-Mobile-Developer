@@ -1,11 +1,10 @@
+//pacotes e importações
 package one.digitalinnovation.digitalbank.testes
-
-//importando classe banco
-import one.digitalinnovation.digitalbank.banco
+import one.digitalinnovation.digitalbank.Banco
 
 fun main(){
     //argumentos nomeaveis propriedade=valor
-    val digiOneBank = banco(nome = "DigiOne", numero = 12)
+    val digiOneBank = Banco(nome = "DigiOne", numero = 12)
 
     //saidas
     println(digiOneBank.nome)
